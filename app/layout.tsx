@@ -13,7 +13,20 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+
         {children}
+
+
+        <footer className="bg-[#0b1f3a] text-white text-center py-5">
+
+          <p className="text-sm">
+            Site feito com ❤️ pelo papai Otávio
+          </p>
+
+
+        </footer>
+
+
       </body>
     </html>
   );
