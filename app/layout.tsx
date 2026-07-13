@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Chá de Bebê - Luiz Otávio",
@@ -23,8 +24,28 @@ export default function RootLayout({
             Site feito com ❤️ pelo papai Otávio
           </p>
 
-
         </footer>
+
+
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-D3M4B75DLM"
+        />
+
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-D3M4B75DLM');
+          `}
+        </Script>
 
 
       </body>
